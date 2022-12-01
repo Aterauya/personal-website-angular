@@ -8,13 +8,13 @@
       <p>
         Interested in the code?
         <a href="https://github.com/Aterauya/personal-website-angular">
-          <strong>Go here</strong>
+          <strong class="hover:underline">Go here</strong>
         </a>
       </p>
       <br />
       <p>
-        PS C:\Users\personal-site
-        <strong>
+        PS C:\Users\personal-site>
+        <strong class="hover:underline">
           <a href="https://www.linkedin.com/in/adam-duboczky/">
             {{ nameText }}
           </a>
@@ -22,20 +22,20 @@
         <span *ngIf="getNameCursor()" class="animate-blink">_</span>
       </p>
       <p>
-        PS C:\Users\personal-site <strong>{{ jobText }}</strong>
+        PS C:\Users\personal-site> <strong>{{ jobText }}</strong>
         <span *ngIf="getJobCursor()" class="animate-blink">_</span>
       </p>
 
       <p>
-        PS C:\Users\personal-site
-        <strong
-          ><a href="https://synecticsglobal.com/en/">
+        PS C:\Users\personal-site>
+        <strong class="hover:underline">
+          <a href="https://synecticsglobal.com/en/">
             {{ employmentText }}
-          </a></strong
-        >
+          </a>
+        </strong>
         <span *ngIf="getEmploymentCursor()" class="animate-blink">_</span>
       </p>
-      <p>PS C:\Users\personal-site <span class="animate-blink">_</span></p>
+      <p>PS C:\Users\personal-site> <span class="animate-blink">_</span></p>
     </div>
   </div>
 </div>
