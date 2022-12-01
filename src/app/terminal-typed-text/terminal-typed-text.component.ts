@@ -27,7 +27,7 @@ export class TerminalTypedTextComponent implements OnInit {
     callback(word.slice(0, index));
     setTimeout(() => {
       this.populateText(word, callback, index + 1);
-    }, 200);
+    }, 100);
   };
 
   setText(name: string) {
