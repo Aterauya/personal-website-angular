@@ -1,8 +1,2 @@
-<p>
-  PS C:\Users\personal-site>
-  <strong *ngIf="url !== ''">
-    <a class="hover:underline" [href]="url">{{ typedText }} </a>
-  </strong>
-  <strong *ngIf="url === ''"> {{ typedText }} </strong>
-  <span *ngIf="getCursor()" class="animate-blink">_</span>
-</p>
+<strong *ngIf="url === ''"> {{ typedText }} </strong>
+<span *ngIf="getCursor()" class="animate-blink">_</span>
