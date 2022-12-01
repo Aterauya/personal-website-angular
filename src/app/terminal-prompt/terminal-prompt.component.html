@@ -12,29 +12,18 @@
         </a>
       </p>
       <br />
-      <p>
-        PS C:\Users\personal-site>
-        <strong class="hover:underline">
-          <a href="https://www.linkedin.com/in/adam-duboczky/">
-            {{ nameText }}
-          </a>
-        </strong>
-        <span *ngIf="getNameCursor()" class="animate-blink">_</span>
-      </p>
-      <p>
-        PS C:\Users\personal-site> <strong>{{ jobText }}</strong>
-        <span *ngIf="getJobCursor()" class="animate-blink">_</span>
-      </p>
-
-      <p>
-        PS C:\Users\personal-site>
-        <strong class="hover:underline">
-          <a href="https://synecticsglobal.com/en/">
-            {{ employmentText }}
-          </a>
-        </strong>
-        <span *ngIf="getEmploymentCursor()" class="animate-blink">_</span>
-      </p>
+      <app-terminal-typed-text
+        textToType="Adam Duboczky"
+        url="https://www.linkedin.com/in/adam-duboczky/"
+      >
+      </app-terminal-typed-text>
+      <app-terminal-typed-text textToType="Software Developer">
+      </app-terminal-typed-text>
+      <app-terminal-typed-text
+        textToType="Synectics"
+        url="https://synecticsglobal.com/en/"
+      >
+      </app-terminal-typed-text>
       <p>PS C:\Users\personal-site> <span class="animate-blink">_</span></p>
     </div>
   </div>
