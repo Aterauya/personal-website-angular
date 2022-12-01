@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { fab, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-terminal-prompt',
@@ -8,9 +6,7 @@ import { fab, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
   styleUrls: ['./terminal-prompt.component.scss'],
 })
 export class TerminalPromptComponent implements OnInit {
-  constructor(private library: FaIconLibrary) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.library.addIcons(faGithub, faLinkedin);
-  }
+  ngOnInit(): void {}
 }
