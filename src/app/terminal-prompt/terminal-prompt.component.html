@@ -1,64 +1,70 @@
-<div class="grid place-items-center h-5/6 p-2 max-w-screen-md">
-  <div class="bg-black md:h-1/3 sm:h-1/2 w-full">
-    <div class="grid grid-cols-[1fr_auto] items-center">
-      <h3 class="p-1 text-white">Shell</h3>
-      <div class="flex items-center">
-        <div
-          class="h-fill w-fill hover:bg-slate-800 p-2 cursor-pointer"
-          title="Minimise"
-        >
-          <i class="bi bi-dash text-white justify-self-end"></i>
-        </div>
-        <div
-          class="h-fill w-fill hover:bg-slate-800 p-2 cursor-pointer"
-          title="Maximise"
-        >
-          <i class="bi bi-square text-white justify-self-end"></i>
-        </div>
-        <div
-          class="h-fill w-fill hover:bg-red-600 p-2 cursor-pointer"
-          title="Close"
-        >
-          <i class="bi bi-x-lg text-white justify-self-end"></i>
+<div class="boundary h-5/6 w-[99%]">
+  <div class="grid place-items-center h-full p-2 max-w-screen-md">
+    <div
+      class="bg-black md:h-1/3 sm:h-1/2 w-full"
+      cdkDragBoundary=".boundary"
+      cdkDrag
+    >
+      <div class="grid grid-cols-[1fr_auto] items-center" cdkDragHandle>
+        <h3 class="p-1 text-white">Shell</h3>
+        <div class="flex items-center">
+          <div
+            class="h-fill w-fill hover:bg-slate-800 p-2 cursor-pointer"
+            title="Minimise"
+          >
+            <i class="bi bi-dash text-white justify-self-end"></i>
+          </div>
+          <div
+            class="h-fill w-fill hover:bg-slate-800 p-2 cursor-pointer"
+            title="Maximise"
+          >
+            <i class="bi bi-square text-white justify-self-end"></i>
+          </div>
+          <div
+            class="h-fill w-fill hover:bg-red-600 p-2 cursor-pointer"
+            title="Close"
+          >
+            <i class="bi bi-x-lg text-white justify-self-end"></i>
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      class="bg-blue-900 h-full w-full text-white border-2 border-black border-t-0"
-    >
-      <p>Portfolio Shell</p>
-      <p>No Copyright</p>
-      <br />
-      <p>
-        Interested in the code?
-        <a href="https://github.com/Aterauya/personal-website-angular">
-          <strong class="hover:underline">Go here</strong>
-        </a>
-      </p>
-      <br />
-      <p>
-        PS C:\Users\personal-site>
-        <a
-          class="hover:underline"
-          href="https://www.linkedin.com/in/adam-duboczky/"
-        >
-          <app-terminal-typed-text textToType="Adam Duboczky">
+      <div
+        class="bg-blue-900 h-full w-full text-white border-2 border-black border-t-0"
+      >
+        <p>Portfolio Shell</p>
+        <p>No Copyright</p>
+        <br />
+        <p>
+          Interested in the code?
+          <a href="https://github.com/Aterauya/personal-website-angular">
+            <strong class="hover:underline">Go here</strong>
+          </a>
+        </p>
+        <br />
+        <p>
+          PS C:\Users\personal-site>
+          <a
+            class="hover:underline"
+            href="https://www.linkedin.com/in/adam-duboczky/"
+          >
+            <app-terminal-typed-text textToType="Adam Duboczky">
+            </app-terminal-typed-text>
+          </a>
+        </p>
+        <p>
+          PS C:\Users\personal-site>
+          <app-terminal-typed-text textToType="Software Developer">
           </app-terminal-typed-text>
-        </a>
-      </p>
-      <p>
-        PS C:\Users\personal-site>
-        <app-terminal-typed-text textToType="Software Developer">
-        </app-terminal-typed-text>
-      </p>
-      <p>
-        PS C:\Users\personal-site>
-        <a class="hover:underline" href="https://synecticsglobal.com/en//">
-          <app-terminal-typed-text textToType="Synectics">
-          </app-terminal-typed-text>
-        </a>
-      </p>
-      <p>PS C:\Users\personal-site> <span class="animate-blink">_</span></p>
+        </p>
+        <p>
+          PS C:\Users\personal-site>
+          <a class="hover:underline" href="https://synecticsglobal.com/en//">
+            <app-terminal-typed-text textToType="Synectics">
+            </app-terminal-typed-text>
+          </a>
+        </p>
+        <p>PS C:\Users\personal-site> <span class="animate-blink">_</span></p>
+      </div>
     </div>
   </div>
 </div>

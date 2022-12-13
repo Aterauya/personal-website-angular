@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TerminalPromptComponent } from './terminal-prompt/terminal-prompt.component';
 import { TerminalTypedTextComponent } from './terminal-typed-text/terminal-typed-text.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import { TerminalTypedTextComponent } from './terminal-typed-text/terminal-typed
     TerminalPromptComponent,
     TerminalTypedTextComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, DragDropModule],
   providers: [],
   bootstrap: [AppComponent],
 })
